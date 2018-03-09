@@ -408,6 +408,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chromatics.Devices.Coolermaster\Chromatics.Devices.Coolermaster.csproj">
+      <Project>{ed5c984e-f7e0-441e-b542-31e840a7f656}</Project>
+      <Name>Chromatics.Devices.Coolermaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chromatics.Devices\Chromatics.Devices.csproj">
+      <Project>{84c0a737-d251-4a1c-9839-cded655f96d7}</Project>
+      <Name>Chromatics.Devices</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
